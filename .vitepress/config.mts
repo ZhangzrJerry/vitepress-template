@@ -1,8 +1,14 @@
 
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+    markdown: {
+        config: (md) => {
+            md.use(mathjax3);
+        },
+    },
     base: "/",
     head: [['link', { rel: 'icon', href: '/icon/favicon.ico' }]],
     srcDir: "docs",
