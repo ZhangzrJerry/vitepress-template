@@ -1,0 +1,16 @@
+mjx-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+}
+
+mjx-container[display="true"] {
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+}
+
+mjx-container>svg {
+    max-width: 100%;
+    height: auto;
+}
